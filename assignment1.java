@@ -1,35 +1,5 @@
 import java.util.*;
-public class assignment1 {
-    public static void main(String[] args) {
-        float num1, num2;
-        Complex_No cal = new Complex_No();
-        Scanner Sc = new Scanner(System.in);
-        System.out.println("Enter the Complex number in a+bi format : ");
-		
-		//taking input for First Number
-		System.out.print("Enter real part of First Number: a : ");
-		num1=Sc.nextFloat();
-		System.out.print("Enter img part of First Number: b : ");
-		num2=Sc.nextFloat();
-		Complex_No Com1=new Complex_No(num1,num2);
-		
-		System.out.print("Enter real part of Second Number: a : ");
-		num1=Sc.nextFloat();
-		System.out.print("Enter img part of Second Number: b : ");
-		num2=Sc.nextFloat();
-		Complex_No Com2=new Complex_No(num1,num2);
-		Sc.close();
-		
-		System.out.print("\n");
-		cal.Display(Com1,Com2);
-		System.out.print("\n");
-		cal.AddNumbers(Com1,Com2);
-		cal.SubNumbers(Com1,Com2);
-		cal.MultiNumbers(Com1,Com2);
-		cal.DivNumbers(Com1, Com2);
 
-    }
-}
 class Complex_No {
     float real, img;
 
@@ -70,4 +40,36 @@ public void DivNumbers(Complex_No C1,Complex_No C2) {
 	img=(C1.img*C2.real-C1.real*C2.img)/(C2.real*C2.real+C2.img*C2.img);
 	System.out.println("Division of Complex Numbers =("+real+")+("+img+")i");
 }
+}
+
+public class assignment1 {
+    public static void main(String[] args) {
+        float num1, num2;
+        Complex_No cal = new Complex_No();
+        Scanner Sc = new Scanner(System.in);
+        System.out.println("Enter the Complex number in a+bi format : ");
+		
+		//taking input for First Number
+		System.out.print("Enter real part of First Number: a : ");
+		num1=Sc.nextFloat();
+		System.out.print("Enter img part of First Number: b : ");
+		num2=Sc.nextFloat();
+		Complex_No Com1=new Complex_No(num1,num2);
+		
+		System.out.print("Enter real part of Second Number: a : ");
+		num1=Sc.nextFloat();
+		System.out.print("Enter img part of Second Number: b : ");
+		num2=Sc.nextFloat();
+		Complex_No Com2=new Complex_No(num1,num2);
+		Sc.close();
+		
+		System.out.print("\n");
+		cal.Display(Com1,Com2);
+		System.out.print("\n");
+		cal.AddNumbers(Com1,Com2);
+		cal.SubNumbers(Com1,Com2);
+		cal.MultiNumbers(Com1,Com2);
+		cal.DivNumbers(Com1, Com2);
+
+    }
 }
