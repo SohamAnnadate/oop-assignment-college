@@ -1,10 +1,8 @@
 //Problem Statement::
 /*
-Identify commonalities and differences between Publication, Book and Magazine classes. 
-Title, Price, Copies are common instance variables and saleCopy is common method.
-The differences are, Bookclass has author and orderCopies().
-Magazine Class has data members as orderQty, Current issue and method receiveNewissue().Write a program 
-to find how many copies of the given books are ordered and display total sale of publication.
+Design a class ‘Complex ‘with data members for real and imaginary part. 
+Provide default and Parameterized constructors. Write a program to perform 
+arithmetic operations of two complex numbers.
 */
 
 import java.util.*;
